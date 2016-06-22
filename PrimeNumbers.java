@@ -1,4 +1,4 @@
-package codeAbbey;
+package CodeAbbey.algorithms;
 /*
 In this task we are going to implement the primes generator.
 Primes are positive integers which have no other divisors except 1 and itself.
@@ -65,7 +65,7 @@ public class PrimeNumbers {
     // метод, проверяющий, является ли число простым
     private static boolean isPrime(int checkPrime) {
         if (checkPrime < 2) return false;
-        // вспоминаем теорию чисел и понимаем, что переберать надо только числа, не превосходящие корня из искомого
+        // вспоминаем теорию чисел и понимаем, что перебирать надо только числа, не превосходящие корня из искомого
         // что значительно ускоряет работу алгоритма
         for (int i = 2; i <= Math.sqrt(checkPrime); i++) {
             if (checkPrime % i == 0) {
